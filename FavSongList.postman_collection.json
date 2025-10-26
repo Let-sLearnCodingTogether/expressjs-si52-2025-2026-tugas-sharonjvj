@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "530762ce-135b-4a79-b1a6-22f8e6293414",
+		"name": "FavSongList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49457634",
+		"_collection_link": "https://sharonjvj-4679384.postman.co/workspace/Sharon's-Workspace~efa751ae-1b19-4fe3-8f93-a80d516f2d5d/collection/49457634-530762ce-135b-4a79-b1a6-22f8e6293414?action=share&source=collection_link&creator=49457634"
+	},
+	"item": [
+		{
+			"name": "Tambah Lagu Fav",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"songTitle\" : \"Smile\",\r\n    \"artist\" : \"Avril Lavigne\",\r\n    \"album\" : \"Goodbye Lullaby (Expanded Edition)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/addFavSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addFavSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daftar Lagu Fav",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data Lagu",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
