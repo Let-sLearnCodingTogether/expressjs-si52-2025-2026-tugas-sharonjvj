@@ -4,7 +4,6 @@ const MusicSchema = new mongoose.Schema(
     {
         songTitle: {
             type: String,
-            unique: true,
             required: true,
             trim : true,
         },
